@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #f1f6fc31;
+}
+
+section, footer{
+    padding: 55px 0;
+}
+
+h3{
+    font-size: 50px
+}
+
+p{
+    color: #101010;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.container-img img{
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.btn{
+    background-color: #4C007D;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn .animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+    background-color: #500185;
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4C007D;
+    }
+    to{
+        outline: 15px solid #4C007D;
+    }
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    font-family: "Red Rose", serif;
+}
+
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: #4C007D;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+/*Menu mobile*/
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    font-family: "Red Rose", serif;
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+/* Faça mais */
+.faca-mais{
+    font-family: "Red Rose", serif;
+}
+
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+}
+
+.faca-mais .faca-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.faca-mais .faca-mais-text h3{
+    font-size: 56px;
+}
+
+.faca-mais .faca-mais-text p{
+    margin: 5px 0 10px 0;
+    font-size: 25px;
+}
+
+.faca-mais .faca-mais-img{
+    width: 50%;
+}
+
+.faca-mais .faca-mais-img img{
+    width: 100%;
+}
+
+.depoimentos h3{
+    text-align: center;
+}
+
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.depoimentos{
+    font-family: "Red Rose", serif;
+}
+
+.depoimentos .card-item{
+    background-color: #cacaca;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.depoimentos .card-item .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.depoimentos .card-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item .estrelas i{
+    margin: 15px 0;
+    border-top: 2px solid #101010;
+}
+
+.depoimentos .card-item:hover{
+    background-color: #4C007D;
+    margin-top: -5px;
+}
+
+.depoimentos .card-item:hover .depoimento-user,
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .estrelas i{
+    color: white;
+}
+
+/*Afiliados*/
+.afiliados .container{
+    font-family: "Red Rose", serif;
+}
+
+.clientes h3,
+.clientes p{
+    text-align: center;
+}
+
+.clientes .container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Footer*/
+.footer{
+    background-color: #4C007D;
+    text-align: center;
+    font-family: "Red Rose", serif;
+}
+
+.footer i{
+    color: #4C007D;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+/*Pagina sobre*/
+.sobre{
+    font-family: "Red Rose", serif;
+}
+
+.sobre .container{
+    display: flex;
+    max-width: 1600px;
+    align-items: center;
+    justify-content: space-betweenf;
+}
+
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.sobre-text h3{
+    font-size: 36px;
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: #101010;
+}
+
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*Fim da Pagina sobre*/
+
+/*Servicos*/
+
+.servicos h3{
+    text-align: center;
+}
+
+.servicos .container{
+    font-family: "Red Rose", serif;
+}
+
+.servicos .container > p{
+    text-align: center;
+}
+
+.servicos .rows-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.servicos .row-card-item{
+    background-color: #4C007D;
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.servicos .row-card-item:hover{
+    background-color: #7c03cc;
+}
+
+.servicos .row-card-item:hover p{
+    color: white;
+}
+
+.servicos .row-card-item img{
+    background-color: #270141;
+    border-radius: 14px;
+    width: 70px;
+    padding: 9px;
+}
+
+.servicos .row-card-item p.nome-servico{
+    margin: 5px 0;
+    transform: 0.3s;
+}
+
+.servicos .row-card-item p.descricao-servico{
+    transition: 0.3s;
+}
+
+/*Pagina de contato*/
+
+.contato .container{
+    font-family: "Red Rose", serif;
+}
+
+.contato-info{
+    display: flex;
+    margin-top: 50px;
+}
+
+.contato-info .left-side{
+    width: 100%;
+    padding: 30px;
+    background-color: #500185;
+    border-radius: 14px;
+    margin: 0;
+    height: fit-content;
+}
+
+.contato-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-info .left-side div i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+
+.contato-info .left-side p{
+    font-size: 17px;
+    color: white;
+}
+
+.contato-info .right-side{
+    width: 100%;
+}
+
+/*Fim Pagina de contato*/
+
+/*Fim Servicos*/
+
+@media (max-width: 830px){
+    /*Mobile*/
+    .container-img img{
+        margin-left: 10px;
+    }
+    .btn{
+        padding: 0;
+    }
+    .btn2{
+        background-color: #4C007D;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.2s;
+    }
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #4C007D;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+        z-index: 2;
+    }
+
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+
+    .ul a{
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    
+    .banner .banner-text h1{
+        font-size: 12vw;
+        color: white;
+    }
+    nav .menu-icon{
+        display: block;
+        position: relative;
+        z-index: 1;
+        top: 8px;
+        right: 15px;
+        
+    }
+    nav .close-icon{
+        display: block;
+        position: relative;
+        bottom: 390px;
+        left: 153px;
+    }
+    /*Home resp*/
+    .faca-mais .faca-mais-text{
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
+    }
+    .faca-mais .container{
+        flex-direction: column;
+    }
+    .faca-mais .faca-mais-text h3{
+        font-size: 40px;
+        text-align: center;
+    }
+    .faca-mais .faca-mais-text,
+    .faca-mais .faca-mais-img{
+        width: 100%;
+    }
+    .afiliados .container{
+        text-align: center;
+        justify-content: center;
+    }
+    .afiliados .container p{
+        text-align: center;
+        font-size: 5vw;
+    }
+    /*Banner*/
+    .banner .banner-text{
+        padding: 0;
+        margin: 60px;
+    }
+    .banner .banner-text p{
+        font-size: 5vw;
+    }
+    .depoimentos .card-item{
+        width: 100%;
+    }
+    /*sobre*/
+    .sobre .container{
+        flex-direction: column-reverse;
+    }
+    .sobre .sobre-img,
+    .sobre .sobre-text{
+        width: 100%;
+    }
+    .sobre .sobre-text{
+        margin-top: 40px;
+    }
+    
+    /*contato*/
+    .contato .contato-info{
+        flex-direction: column-reverse;
+    } 
+    .contato-info .right-side,
+    .contato-info .left-side{
+        width: 100%;
+    }
+    .contato-info .left-side img{
+        margin-right: 10px;
+    }
+    .contato-info .right-side{
+        margin-bottom: 30px;
+    }
+    .servicoFooter{
+        position: absolute;
+        width: 100vw;
+    }
+    .depoimentos h3{
+        font-size: 10vw;
+    }
+
+}
+@media (max-widht:500px){
+    .banner .banner-text h1{
+        font-size: 50px;
+    }
+    .faca-mais .faca-mais-text h3{
+        font-size: 40px;
+    }
+}
